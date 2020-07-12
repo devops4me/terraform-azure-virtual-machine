@@ -21,3 +21,14 @@ az login
 
 In the browser that pops up select your Azure account and log in. The JSON resulting from the login will state the **subscription ID**, the **tenant ID**, the **home tenant ID** and the **user name**.
 
+Now in the terminal issue these commands.
+
+```
+git clone https://github.com/devops4me/terraform-azure-virtual-machine
+terraform init
+terraform plan
+terraform apply -auto-approve
+#  Now check that the resource group and VM infrastructure were created
+terraform destroy -auto-approve
+```
+
